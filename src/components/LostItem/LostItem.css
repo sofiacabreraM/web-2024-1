@@ -1,0 +1,19 @@
+.item-container{
+background-color: rgb(59, 131, 246);
+
+}
+.item-title{
+color: white;
+}
+.item-description{
+    color: white;
+}
+.item-Button{
+    padding: 20px 30px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: none;
+    margin-top: 30px;    
+}

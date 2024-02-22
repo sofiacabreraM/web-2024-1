@@ -1,0 +1,48 @@
+.footerContainer{
+    background-color: black;
+}
+
+.footerContainer{
+    position: relative;
+}
+
+.footer-list2{
+    color: white;
+}
+.footer-list1{
+    color: white;
+}
+.line{
+    color: white;
+    background-color: white;
+    width: 100%;
+    height: 4px;
+    margin-top: 5%;
+
+}
+
+.content-black{
+    height: 40%;
+    color: black;
+    background-color: black;
+}
+
+@media only screen and (max-width: 480px) {
+.footer-list1{
+    display: none;
+    
+}
+.footer-list2{
+ margin-top: 5%;
+ align-items: flex-end;
+}
+.images-apps{
+    height: 20%;
+    width: 30%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.content-black{
+    height: 80px;
+  
+}}
