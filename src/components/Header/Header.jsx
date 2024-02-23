@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './Header.css';
 import {LIST_HEADER} from "../../const/ListHeader"
+import { Menu } from '../Menu/Menu';
+
+
 
 export function Header() {
  const[showMenu, setShowMenu] = useState(false)
@@ -46,28 +49,4 @@ export function Header() {
   );  
 }
 
-function Menu ({ items }) {
-return (
-  <nav>
-  <ul>
-  {
-    items.map((item) =>
-    <MenuItem
-    item={item}
-    key={item.id}
-    />
-    )
-  }
-     
-  </ul>
-  </nav>
-)}
 
-function MenuItem({item}) {
-  const {text} = item
-return(
-  <li>
-  <a href=''>{text}</a>
-  </li>
-)
-}

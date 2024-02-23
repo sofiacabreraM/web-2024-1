@@ -1,8 +1,8 @@
 import React from 'react';
 import './Info.css';
-import icon1 from '../../images/iconCash.png'
-import icon2 from '../../images/iconClock.png'
-import icon3 from '../../images/iconUser.png'
+import icon1 from '../../../images/iconCash.png'
+import icon2 from '../../../images/iconClock.png'
+import icon3 from '../../../images/iconUser.png'
 
 export function Info() {
   return (
