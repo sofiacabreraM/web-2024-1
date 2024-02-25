@@ -1,5 +1,5 @@
 .info-container {
-  display: flex; /* Cambiar a display flex para que los elementos se alineen en línea */
+  display: flex; 
   justify-content: center;
   align-items: center;
   height: auto;
