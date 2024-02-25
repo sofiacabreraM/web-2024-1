@@ -35,7 +35,8 @@ export function Footer(){
     }
     </ul>
     </div>
-    <img src="https://web.didiglobal.com/static/5b2c5116bf63ed9778a804821c6b11a0/50a91/android-ios-spanish.webp" alt="stores" className='images-apps'/>
+    <img src="https://web.didiglobal.com/static/5b2c5116bf63ed9778a804821c6b11a0/50a91/android-ios-spanish.webp" alt="stores" className='footerimg-apps'/>
+    <img src="https://web.didiglobal.com/static/d8b9b8ce320bd4deb707123cff602d73/de0d4/didi-logo.png" alt="stores" className='footer-logo'/>
     </div>
     )
 }

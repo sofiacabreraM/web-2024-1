@@ -6,4 +6,10 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.743); 
     z-index: 100; 
+    margin-top: 50px;
+    align-items: center;
+    
+}
+li{
+    color: white;
 }

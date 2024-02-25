@@ -1,6 +1,6 @@
 import React from 'react';
 import './Banner.css';
-import carImg from '../../images/img2.png'
+import carImg from '../../../images/img2.png'
 
 
 export function Banner() {

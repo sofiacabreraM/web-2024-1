@@ -1,0 +1,71 @@
+.usedidi-button{
+    padding: 20px 30px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: none;
+    margin-top: 40px;   
+    display: flex;
+    margin-left: 40%;
+    font-weight: bold; 
+    font-size: 1.0em; 
+    transition: background-color 0.3s, color 0.3s; 
+    box-shadow: 0 0 10px  #cb4a13 ; 
+    background-color:  #f2723c;
+    color: #ffffff;
+    margin-bottom: 5%;
+    }
+    .usedidi-button:hover {
+        background-color: black; 
+        color: white; 
+      }
+   
+    .img-usedidi {
+        margin-top: 5%;
+        border-radius: 50%;
+        height: 35%;
+        width: 35%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .usedidi-title{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin: 5%;
+    }
+    .usedidi-info {
+        margin: 5%;
+        text-align: left;
+        color: black;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .img-usedidi {
+            margin-top: 5%;
+            border-radius: 50%;
+            height: 70%;
+            width: 70%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .usedidi-info {
+            margin: 5%;
+            margin-bottom: 6%;
+            text-align: left; 
+        }
+        .usedidi-title {
+            margin: 5%;
+            margin-bottom: 10%;
+            text-align: left; 
+        }
+        .usedidi-button {
+            margin-top: 10%;
+            margin-bottom: 10%;
+            display: flex;
+           margin-left: 15%;
+    
+        }
+    }

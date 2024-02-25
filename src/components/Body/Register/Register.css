@@ -1,43 +1,80 @@
 * {
-    font-family: "Inter", sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: sans-serif;
   }
 
-.RegisterContainer{
+.register-container{
     background-color:  #f2723c;
     position: static;
-    width: 100%;
-    align-items: center;
-  
+    width: 100% auto;
+    margin-top: 5%;
+    height: 300px;
 }
 
-.RegisterButton{
+.register-button{
   padding: 20px 30px;
   border-radius: 30px;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   cursor: pointer;
   border: none;
-  margin-top: 30px;
+  margin-bottom: 20%;
+  box-shadow: 0 0 10px #b14416; 
+  display: flex;
+  text-align:center;
+  justify-content:center;
+  font-weight: bold; 
+  font-size: 1.0em; 
+  transition: background-color 0.3s, color 0.3s; 
+  margin: 5%;
 }
-.RegisterTitle{
-    color: #ffffff;
+.register-button:hover {
+  background-color: black; 
+  color: white; 
+}
+.register-title{
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 5%;
+  display: flex; 
+  justify-content: left; 
+  align-items: left; 
+  text-align: left;
+  margin: 5%;
 }
 
-.RegisterDescription{
-    color: #ffffff;
+.register-description{
+  color: white;
+  margin: 5%;
+  display: flex; 
+  justify-content: left; 
+  align-items: left; 
+  text-align: left;
 }
 
 @media only screen and (max-width: 768px) {
 
-  .RegisterContainer{
+  .register-container{
   background-color: #f2723c;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  box-sizing: border-box; /* Ajuste del modelo de caja */
+}
+
+.register-title{
+  color: #ffffff;
+  margin-top: 20%;
+  margin-bottom: 10%;
+  text-align: left;
+}
+
+.register-description{
+  color: #ffffff;
+  text-align: left;
+}
+.register-button{
+  margin-bottom: 5%;
+  margin-left: 0;
 }
 }

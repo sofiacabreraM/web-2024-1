@@ -1,31 +1,23 @@
-.Info-container {
-  display: flex;
+.info-container {
+  display: flex; /* Cambiar a display flex para que los elementos se alineen en línea */
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin-top: 5%; 
+  height: auto;
+  width: auto;
   position: static;
+  margin-top: 45%;
 }
 
-.content-one{
-  flex: 1;
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
-}
-.content-two{
+.content-one,
+.content-two,
+.content-three {
   flex: 1;
   padding: 20px;
   margin: 10px;
   text-align: center;
 }
 
-.content-tree{
-  flex: 1;
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
-}
+
 
 .icon-info {
   width: 50px;
@@ -36,9 +28,9 @@
 
 
 @media only screen and (max-width: 768px) {
-  .Info-container {
+  .info-container {
     flex-direction: column;
-    margin-top: 150%;
+    margin-top: 180%;
     margin-bottom: 10%;
     position: static;
   }

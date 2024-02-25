@@ -6,7 +6,7 @@ import icon3 from '../../../images/iconUser.png'
 
 export function Info() {
   return (
-    <div className="Info-container">
+    <div className="info-container">
     <div className="content-one">
     <img src={icon3} alt="" srcset=""  className='icon-info'/>
     <h4 className="titleInfo">Amplia disponibilidad y cobertura</h4>
@@ -21,7 +21,7 @@ export function Info() {
     <p className="descriptionInfo">Disfruta de arrendamientos sin pagar de más.</p>
     </div>
 
-    <div className="content-tree">
+    <div className="content-three">
     <img src={icon2} alt="" srcset=""  className='icon-info' />
     <h4 className="titleInfo">Soporte 24/7</h4>
     <p className="descriptionInfo">Tu seguridad es nuestra prioridad.

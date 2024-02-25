@@ -1,12 +1,26 @@
 .item-container{
 background-color: rgb(59, 131, 246);
-
+width: 100% auto;
+margin-top: 5%;
+height: 300px;
 }
 .item-title{
-color: white;
-}
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 5%;
+    display: flex; 
+    align-items: left; 
+    margin: 5%;
+  }
+
+
 .item-description{
     color: white;
+    margin: 5%;
+    display: flex; 
+    justify-content: left; 
+    align-items: left; 
+    text-align: left; 
 }
 .item-Button{
     padding: 20px 30px;
@@ -15,5 +29,37 @@ color: white;
     color: rgb(0, 0, 0);
     cursor: pointer;
     border: none;
-    margin-top: 30px;    
+    margin-bottom: 20%;
+    box-shadow: 0 0 10px  rgb(16, 68, 151); 
+    display: flex;
+    font-weight: bold; 
+    font-size: 1.0em; 
+    transition: background-color 0.3s, color 0.3s; 
+    margin: 5%;
+}
+.item-Button:hover {
+    background-color: black; 
+    color: white; 
+  }
+
+@media only screen and (max-width: 768px) {
+.item-container{
+background-color: rgb(59, 131, 246);
+height: 300px; 
+}
+.item-title{
+    text-align: left;
+    margin: 5%;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+.item-description{
+    text-align: left;
+    margin: 5%;
+}
+.item-Button{
+    margin-bottom: 5%;
+    margin-left: 0;
+    
+}
 }
