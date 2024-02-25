@@ -1,0 +1,15 @@
+.btn-add{
+    background-color: #009FB7;
+    color: white;
+    margin-right: 2%;
+}
+.btn-substract{
+    background-color: #E94F2B;
+    color: white;
+    
+}
+.btn-rest{
+    background-color: #000E31;
+    color: white;  
+    margin-right: 2%;
+}
