@@ -15,12 +15,14 @@ export function Menu ({ items }) {
       </nav>
     )}
     
-    export function MenuItem({item}) {
-      const {text} = item
-    return(
-      <li>
-      <a href=''>{text}</a>
-      </li>
-    )
-    }
+    export function MenuItem({ item }) {
+      const { text } = item;
+      return (
+          <li className="menu-item">
+              <a href=''>{text}</a>
+          </li>
+      );
+  }
+  
+    
     
