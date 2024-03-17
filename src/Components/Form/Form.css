@@ -1,0 +1,41 @@
+.container-form {
+  text-align: center;
+}
+
+.container-form h1 {
+  margin-bottom: 20px;
+}
+
+.task-content {
+  margin-bottom: 20px;
+}
+
+.task-content input[type="text"] {
+  padding: 8px;
+  width: 60%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.btn-task {
+  padding: 8px 16px;
+  background-color: rgb(88, 186, 252);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-task:hover {
+  background-color: #0056b3;
+}
+
+.btn-task-filled {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
