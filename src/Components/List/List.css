@@ -6,4 +6,44 @@
   .title-list {
     color: #999;
   }
+
+  .container-list ul {
+    list-style: none;  
+    padding: 0;
+  }
+  
+  .container-list ul li {
+    background-color: #ffffff; 
+    padding: 10px;
+  }
+
+  .button-task{
+    padding: 8px 16px;
+    background-color: #F67E27;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .container-list ul li {
+      margin: 3%;
+      height: 30px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .button-task{
+      width: 90px;
+      margin-left: 5%;
+    }
+    .input-task {
+      margin-right: 5%; 
+      width: 15px;
+    }
+
+  }
+ 
   

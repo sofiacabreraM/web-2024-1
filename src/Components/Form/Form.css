@@ -1,3 +1,4 @@
+
 .container-form {
   text-align: center;
 }
@@ -20,22 +21,69 @@
 
 .btn-task {
   padding: 8px 16px;
-  background-color: rgb(88, 186, 252);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: #6869F4;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .btn-task:hover {
-  background-color: #0056b3;
+  background-color: #ffffff;
 }
 
 .btn-task-filled {
   padding: 8px 16px;
-  background-color: #007bff;
-  color: white;
+  background-color: #6869F4;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+  .container-form{
+    background-color: #878AF5;
+  }
+  .header-form {
+    position: relative;
+    width: 100% auto; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+  
+  .img-profile{
+    width: 15%;
+    height: 15%;
+    margin: 5%;
+}
+.header-form h5 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.header-form h6 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  opacity: 0.8;
+  margin: 0;
+  margin-left: 5%;
+}
+.task-content input[type="text"]{
+    width: 50%; 
+    padding: 10px; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    margin-bottom: 5%;
+    background-color: #ffffff;
+}
+}
+  

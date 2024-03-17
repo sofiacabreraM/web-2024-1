@@ -23,9 +23,9 @@ export function List({ tasks, setTasks }) {
         <ul>
           {tasks.map((task, id) => (
             <li key={id}>
+              <input type="checkbox" checked={task.completed} onChange={() => handleCheck(id)}  className='input-task'/>
               <span className={task.completed ? 'completed' : ''}>{task.text}</span>
-              <button onClick={() => handleDelete(id)}>Delete</button>
-              <input type="checkbox" checked={task.completed} onChange={() => handleCheck(id)} />
+              <button onClick={() => handleDelete(id)} className='button-task'>Delete</button>
             </li>
           ))}
         </ul>
