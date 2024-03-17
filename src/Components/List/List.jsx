@@ -1,7 +1,7 @@
 import React from 'react';
 import './List.css';
 
-export function List({ tasks, setTasks }) {
+export function List({ tasks, setTasks, onTaskCheck, filter }) {
   const handleDelete = (id) => {
     const updatedTasks = tasks.filter((_, i) => i !== id);
     setTasks(updatedTasks);
@@ -15,15 +15,26 @@ export function List({ tasks, setTasks }) {
       return task;
     });
     setTasks(updatedTasks);
+    onTaskCheck();
   };
+
+  const filteredTasks = tasks.filter(task => {
+    if (filter === 'completed') {
+      return task.completed;
+    } else if (filter === 'pending') {
+      return !task.completed;
+    } else {
+      return true;
+    }
+  });
 
   return (
     <div className='container-list'>
-      {tasks.length > 0 ? (
+      {filteredTasks.length > 0 ? (
         <ul>
-          {tasks.map((task, id) => (
+          {filteredTasks.map((task, id) => (
             <li key={id}>
-              <input type="checkbox" checked={task.completed} onChange={() => handleCheck(id)}  className='input-task'/>
+              <input type="checkbox" checked={task.completed} onChange={() => handleCheck(id)} className='input-task'/>
               <span className={task.completed ? 'completed' : ''}>{task.text}</span>
               <button onClick={() => handleDelete(id)} className='button-task'>Delete</button>
             </li>
