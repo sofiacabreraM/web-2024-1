@@ -25,6 +25,23 @@
     border-radius: 5px;
     cursor: pointer;
   }
+  .container-list ul li {
+    margin: 3%;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .button-task{
+    width: 90px;
+    margin-left: 5%;
+  }
+  .input-task {
+    margin-right: 5%; 
+    width: 15px;
+  }
   
   @media only screen and (max-width: 768px) {
     .container-list ul li {
@@ -34,16 +51,7 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-    }
-    .button-task{
-      width: 90px;
-      margin-left: 5%;
-    }
-    .input-task {
-      margin-right: 5%; 
-      width: 15px;
-    }
-
+    } 
   }
  
   

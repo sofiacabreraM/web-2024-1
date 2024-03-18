@@ -1,10 +1,29 @@
-
+body, html{
+  margin: 0;
+}
 .container-form {
   text-align: center;
+  background-color: #878AF5;
 }
 
-.container-form h1 {
-  margin-bottom: 20px;
+h6{
+  color: #ffffff;
+  text-align: left; 
+  font-size: 40px; 
+  margin: 5%;
+  margin-top: 0;
+  margin-bottom: 1%;
+}
+h5{
+  color: #ffffff;
+  text-align: left; 
+  font-size: 25px; 
+  margin: 0;
+  margin-left: 5%;
+}
+
+.img-profile {
+  display: none; 
 }
 
 .task-content {
@@ -40,11 +59,16 @@
   border-radius: 5px;
   cursor: pointer;
 }
+.task-content input[type="text"]{
+  width: 50%; 
+  padding: 10px; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  margin-bottom: 5%;
+  background-color: #ffffff;
+}
 
 @media only screen and (max-width: 768px) {
-  .container-form{
-    background-color: #878AF5;
-  }
   .header-form {
     position: relative;
     width: 100% auto; 
@@ -59,11 +83,11 @@
     width: 15%;
     height: 15%;
     margin: 5%;
+    display: block;
 }
 .header-form h5 {
   font-size: 24px;
   font-weight: bold;
-  color: #ffffff;
   margin: 0;
   margin-left: 5%;
   margin-bottom: 5%;
@@ -77,13 +101,6 @@
   margin: 0;
   margin-left: 5%;
 }
-.task-content input[type="text"]{
-    width: 50%; 
-    padding: 10px; 
-    border-radius: 5px; 
-    font-size: 16px; 
-    margin-bottom: 5%;
-    background-color: #ffffff;
-}
+
 }
   
