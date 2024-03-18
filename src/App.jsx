@@ -11,6 +11,15 @@ export function App() {
   const [totalTasksCount, setTotalTasksCount] = useState(0);
 
   useEffect(() => {
+    const storedTasks = JSON.parse(localStorage.getItem('tasks'));
+    if (storedTasks) {
+      setTasks(storedTasks);
+    }
+  }, []);
+
+  
+  useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
     setTotalTasksCount(tasks.length);
     const completedCount = tasks.reduce((count, task) => count + (task.completed ? 1 : 0), 0);
     setCompletedTasksCount(completedCount);
@@ -39,8 +48,9 @@ export function App() {
     <div>
       <Form onAddTask={handleAddTask} />
       <Filters onFilterChange={handleFilterChange} />
-      <List tasks={tasks} setTasks={setTasks} onTaskCheck={handleTaskCheck} />
+      <List tasks={tasks} setTasks={setTasks} onTaskCheck={handleTaskCheck} filter={filter} />
       <Footer completedTasksCount={completedTasksCount} totalTasksCount={totalTasksCount} onDeleteAll={handleDeleteAll} />
     </div>
   );
 }
+
