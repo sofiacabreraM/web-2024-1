@@ -1,38 +1,23 @@
 import React from 'react';
 import './List.css';
+import { useTasksContext } from '../../context/TaskscontextProvider';
 
-export function List({ tasks, setTasks, onTaskCheck, filter }) {
+export function List() {
+  const { tasks, deleteTask, toggleTaskCompletion } = useTasksContext();
+
   const handleDelete = (id) => {
-    const updatedTasks = tasks.filter((_, i) => i !== id);
-    setTasks(updatedTasks);
+    deleteTask(id);
   };
 
   const handleCheck = (id) => {
-    const updatedTasks = tasks.map((task, i) => {
-      if (i === id) {
-        return { ...task, completed: !task.completed };
-      }
-      return task;
-    });
-    setTasks(updatedTasks);
-    onTaskCheck();
+    toggleTaskCompletion(id);
   };
-
-  const filteredTasks = tasks.filter(task => {
-    if (filter === 'completed') {
-      return task.completed;
-    } else if (filter === 'pending') {
-      return !task.completed;
-    } else {
-      return true;
-    }
-  });
 
   return (
     <div className='container-list'>
-      {filteredTasks.length > 0 ? (
+      {tasks.length > 0 ? (
         <ul>
-          {filteredTasks.map((task, id) => (
+          {tasks.map((task, id) => (
             <li key={id}>
               <input type="checkbox" checked={task.completed} onChange={() => handleCheck(id)} className='input-task'/>
               <span className={task.completed ? 'completed' : ''}>{task.text}</span>

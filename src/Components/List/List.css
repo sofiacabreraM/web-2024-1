@@ -2,6 +2,10 @@
     text-align: center;
     margin-top: 20px;
   }
+  .completed {
+    text-decoration: underline;
+    color: #F67E27;
+  }
   
   .title-list {
     color: #999;
