@@ -1,26 +1,60 @@
 import React, { useState, useEffect } from 'react';
+import Loader from '../Loader/Loader';
+import CatButton from '../Button/Button';
+import './Card.css' 
 
 const Card = () => {
+    const [isLoading, setIsLoading] = useState(false);
+    const [error, setError] = useState(null);
+    const [catFact, setCatFact] = useState('');
     const [catImage, setCatImage] = useState('');
 
     useEffect(() => {
-        
-        fetch('https://cataas.com/cat')
+        fetchCatData();
+    }, []); 
+
+    const fetchCatData = () => {
+        setIsLoading(true);
+        setError(null);
+
+        fetch('https://catfact.ninja/fact')
             .then(response => {
-                
-                if (response.ok) {
-                    setCatImage(response.url);
-                } else {
-                   
-                    console.error('Error fetching cat image:', response.statusText);
+                if (!response.ok) {
+                    throw new Error('Failed to fetch cat fact');
                 }
+                return response.json();
             })
-            .catch(error => console.error('Error fetching cat image:', error));
-    }, []);
+            .then(data => {
+                setCatFact(data.fact);
+                const firstFourWords = data.fact.split(' ').slice(0, 4).join(' ');
+                const imageUrl = `https://cataas.com/cat/says/${firstFourWords}`;
+                setCatImage(imageUrl);
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+                setError(error.message);
+            })
+            .finally(() => {
+                setIsLoading(false);
+            });
+    };
+
+    const handleButtonClick = () => {
+        fetchCatData(); 
+    };
 
     return (
-        <div className='card'>
-            <img src={catImage} alt="Cat" />
+        <div className='cat-card'>
+            {isLoading ? (
+                <Loader />
+            ) : (
+                <>
+                    {error && <p>Error: {error}</p>}
+                    <p>{catFact}</p>
+                    <img src={catImage} alt="Cat" />
+                </>
+            )}
+            <CatButton onClick={handleButtonClick} />
         </div>
     );
 };
