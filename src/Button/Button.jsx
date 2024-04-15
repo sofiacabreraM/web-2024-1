@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './Button'
+import './Button.css'
 const CatButton = ({ onClick }) => {
     return (
-        <button onClick={onClick}>Get new fact</button>
+        <button className='btn-cat' onClick={onClick}>Get new fact</button>
     );
 };
 

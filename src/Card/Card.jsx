@@ -44,6 +44,8 @@ const Card = () => {
     };
 
     return (
+        <div className='general-container'>
+            <h1>AppCats</h1>
         <div className='cat-card'>
             {isLoading ? (
                 <Loader />
@@ -51,11 +53,11 @@ const Card = () => {
                 <>
                     {error && <p>Error: {error}</p>}
                     <p>{catFact}</p>
-                    <img src={catImage} alt="Cat" />
+                    <img src={catImage} alt="Cat"  />
                 </>
             )}
             <CatButton onClick={handleButtonClick} />
-        </div>
+        </div> </div>
     );
 };
 

@@ -5,7 +5,7 @@ export function App() {
  return(
     <div>
         <Card></Card>
-        <Loader></Loader>
+
     </div>
  )
 }
