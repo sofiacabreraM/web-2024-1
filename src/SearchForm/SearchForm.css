@@ -1,0 +1,29 @@
+.btn-search{
+    background-color: #2a5aeb;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    height: 50px;
+ 
+}
+
+.barra-buscar{
+  width: 400px; 
+  height: 20px; 
+  padding: 10px; 
+  border: 1px solid #ffffff4d; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  outline: none; 
+  align-items: center;
+  margin: 2%;
+}
+h1{
+    color: #ffffff;
+    text-align: center;
+}
+
